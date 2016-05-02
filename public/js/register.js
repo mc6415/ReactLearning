@@ -23,9 +23,20 @@ var RegisterForm = React.createClass({
   handlePasswordChange: function(e){
     this.setState({pass: e.target.value});
   },
+  handleSubmit: function(e){
+    e.preventDefault();
+    $.ajax({
+      url: '/api/users/create',
+      method: 'POST',
+      data: {user: this.state},
+      success: function(res){
+        console.log(res);
+      }
+    });
+  },
   render: function(){
     return(
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <legend style={{color: 'white'}}>Register</legend>
         <label> Username </label>
         <input type="text"

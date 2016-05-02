@@ -21,6 +21,9 @@ app.get('/', function(req,res){
 app.post('/api/createComment', controllers.comment.create);
 app.get('/api/getComments', controllers.comment.get);
 
+// Users API
+app.post('/api/users/create', controllers.users.create);
+
 app.listen(3000, function(){
   console.log('Server listening on port 3000');
 });
