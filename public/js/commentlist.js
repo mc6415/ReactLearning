@@ -69,10 +69,10 @@ var CommentForm = React.createClass({
   }
 });
 
-ReactDOM.render(
-  <div>
-    <CommentList />
-    <CommentForm />
-</div>,
-document.getElementById('commentlist')
-);
+// ReactDOM.render(
+//   <div>
+//     <CommentList />
+//     <CommentForm />
+// </div>,
+// document.getElementById('commentlist')
+// );
