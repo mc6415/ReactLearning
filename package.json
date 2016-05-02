@@ -1,4 +1,10 @@
 {
   "name": "ReactTest",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14",
+    "path": "^0.12.7"
+  }
 }
