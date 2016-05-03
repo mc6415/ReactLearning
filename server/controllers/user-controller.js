@@ -19,3 +19,16 @@ module.exports.create = function(req,res){
   });
 
 };
+
+module.exports.login = function(req,res){
+  User.find({"username": req.body.state.username}, function(err,data){
+    if(err === null){
+      if(data[0].password === sha1(req.body.state.password)){
+        console.log(data[0]._id);
+        res.cookie('id', data[0]._id.toString()).send(data[0]);
+      }
+    } else {
+      console.log(err);
+    }
+  });
+};
