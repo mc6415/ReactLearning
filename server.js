@@ -24,6 +24,9 @@ app.get('/api/getComments', controllers.comment.get);
 // Users API
 app.post('/api/users/create', controllers.users.create);
 
+app.get('/api/chat/get', controllers.chat.getMsgs);
+app.post('/api/chat/post', controllers.chat.addMsg);
+
 app.listen(3000, function(){
   console.log('Server listening on port 3000');
 });

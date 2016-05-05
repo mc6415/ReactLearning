@@ -24,7 +24,7 @@ var DateFormat = React.createClass({
   }
 })
 
-ReactDOM.render(
-  <DateFormat />,
-  document.getElementById('test')
-)
+// ReactDOM.render(
+//   <DateFormat />,
+//   document.getElementById('test')
+// )
