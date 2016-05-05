@@ -39,10 +39,9 @@ var RegisterForm = React.createClass({
       <form onSubmit={this.handleSubmit}>
         <legend style={{color: 'white'}}>Register</legend>
         <label> Username </label>
-          <input type="text"
-            value={this.state.username}
-            onChange={this.handleUserNameChange}
-            />
+        <input type="text"
+          value={this.state.username}
+          onChange={this.handleUserNameChange}/>
         <label> First Name </label>
         <input type="text"
           value={this.state.firstname}
